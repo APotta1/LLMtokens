@@ -21,3 +21,7 @@ for i in range(5):
         options={"temperature": 1}
     )
     print(f"Run {i+1}: {response['message']['content'].strip()}")
+
+#0 -> always picks the top choice -> repeatable
+#higher -> samples randomly, weighted by confidence -> varied and more varied the higher you go
+# temperature 1 _> confidence loosely, 0 wins every single time which repeats itself

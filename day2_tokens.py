@@ -20,6 +20,8 @@ texts = {
 for label, text in texts.items():
     tokens = enc.encode(text)
     print(f"{label:20s} → {len(tokens):3d} tokens  ({len(text)/len(tokens):.1f} chars/tok)")
+assert enc.decode(enc.encode(real_file)) == real_file
+print("round-trip OK")
 
 #tokenizers
 # A launguage model is a big pile of math. Math operates on numbers not letters.
@@ -29,3 +31,5 @@ for label, text in texts.items():
 #tiktoken is a small open-source python library from open AI that does encode/decode on machine
 #cl100k_base is the tokenizer for specific vocabulary
 #cl - the family name, 100k - 100,000 tokens, base - base version
+
+#generic path a 200-line file from Pythons own standard library
