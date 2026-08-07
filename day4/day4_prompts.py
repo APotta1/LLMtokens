@@ -18,3 +18,8 @@ response = ollama.chat(
 )
 print("=== System for instructions, user for input ===")
 print(response["message"]["content"])
+
+#reuse the real reason
+#instructions stick better
+#safety - the one that matters later
+#multi-turn conversations need it

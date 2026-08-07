@@ -31,3 +31,16 @@ response = ollama.chat(
 )
 print("=== Few-shot (3 examples) ===")
 print(response["message"]["content"])
+
+
+
+# What text goes in — the messages array you build
+# How the model behaves — system prompt, temperature, few-shot examples
+# What text comes out — the response you print
+
+
+# When you give it few-shot examples you're not teaching it anything new. You're saying "match this specific pattern for this conversation."
+
+# See the format → copy the format
+# See the style → copy the style
+# See the classification logic → copy the logic
